@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "rubys",
+	"version": "${version}",
+	"name": "Rubys",
+	"description": "adds rubys lol",
+	"authors": [
+		"Loganish"
+	],
+	"contact": {
+		"homepage": "https://loganish.com/rubysmod",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/rubys/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.loganish.rubys.Rubys"
+		],
+		"fabric-datagen": [
+			"com.loganish.rubys.RubysDataGenerator"
+		],
+		"client": [
+			"com.loganish.rubys.RubysClient"
+		]
+	},
+	"mixins": [
+		"rubys.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
